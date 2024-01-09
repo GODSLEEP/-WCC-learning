@@ -1,0 +1,15 @@
+FUNCTION binarySearch(arr, target):
+    left = 0
+    right = length of arr - 1
+
+    WHILE left <= right:
+        mid = (left + right) / 2
+        
+        IF arr[mid] == target:
+            RETURN mid
+        ELSE IF arr[mid] < target:
+            left = mid + 1
+        ELSE:
+            right = mid - 1
+    
+    RETURN -1 // Target not found
