@@ -1,0 +1,19 @@
+function binarySearchRecursive(arr, target, left, right):
+    if left > right:
+        return -1  // Target not found
+
+    mid = (left + right) // 2
+
+    if arr[mid] equals target:
+        return mid
+    elif arr[mid] less than target:
+        return binarySearchRecursive(arr, target, mid + 1, right)
+    else:
+        return binarySearchRecursive(arr, target, left, mid - 1)
+
+Comments:
+
+The recursive binary search is implemented by passing left and right boundaries as parameters.
+If the left boundary is greater than the right boundary, it means the target is not found, and -1 is returned.
+Calculate the middle index and check if the element at that index is equal to the target.
+If the middle element is less than the target, recursively search in the right half; otherwise, recursively search in the left half.

@@ -1,0 +1,13 @@
+function linearSearchRecursive(array, target, index):
+    if index equals length(array):
+        return -1  // Target not found
+    else if array[index] equals target:
+        return index
+    else:
+        return linearSearchRecursive(array, target, index + 1)
+
+Comments:
+
+The recursive approach checks if the current index is equal to the length of the array; if true, it means the target is not found, and -1 is returned.
+If the current element at the given index is equal to the target, the index is returned.
+Otherwise, the function calls itself with the next index.

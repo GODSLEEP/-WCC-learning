@@ -1,0 +1,11 @@
+function linearSearchIterative(array, target):
+    for i from 0 to length(array) - 1:
+        if array[i] equals target:
+            return i
+    return -1  // Target not found
+
+Comments:
+
+This iterative approach uses a loop to iterate through each element of the array.
+It checks if the current element is equal to the target.
+If a match is found, it returns the index of the target; otherwise, it returns -1 indicating that the target is not present in the array.
